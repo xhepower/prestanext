@@ -1,0 +1,44 @@
+:root {
+  --gris-oscuro: #333;
+  --gris-medio: #666;
+  --gris-claro: #ccc;
+  --blanco: #fff;
+  --naranja: #ff5733;
+  --naranja-claro: #ffa07a;
+  --naranja-oscuro: #e64d00;
+}
+* {
+  min-width: 0;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  max-width: 320px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+h1 {
+  color: var(--naranja-claro);
+}

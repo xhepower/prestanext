@@ -1,0 +1,6 @@
+.home {
+  background-color: var(--blanco);
+  border: 1px solid var(--naranja-claro);
+  border-radius: 5px;
+  margin: 5px;
+}
