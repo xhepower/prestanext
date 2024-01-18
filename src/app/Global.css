@@ -38,7 +38,11 @@ h6 {
 }
 p {
   text-wrap: pretty;
+  display: inline;
 }
 h1 {
   color: var(--naranja-claro);
+}
+.card {
+  display: flex;
 }

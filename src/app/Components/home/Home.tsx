@@ -8,11 +8,13 @@ export function Home(props: propsInterface) {
   const { datos } = props;
   return (
     <section className="home">
-      {datos?.map((ruta) => {
-        const key: string = `ruta${ruta.id}`;
+      <div className="ruta-container">
+        {datos?.map((ruta) => {
+          const key: string = `ruta${ruta.id}`;
 
-        return <Ruta key={key} ruta={ruta}></Ruta>;
-      })}
+          return <Ruta key={key} ruta={ruta}></Ruta>;
+        })}
+      </div>
     </section>
   );
 }

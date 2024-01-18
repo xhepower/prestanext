@@ -28,8 +28,21 @@ export function Cliente({ cliente }: props) {
     prestamos,
   } = cliente;
   return (
-    <div className="ruta">
-      <p className="rutaNombre">Nombre de Cliente: {name}</p>
+    <div className="cliente">
+      <div>
+        <p className="clienteItem">Nombre de ruta: {name}</p>
+      </div>
+      <div className="cliente-container">
+        {prestamos.map((prestamo) => {
+          return (
+            // <Prestamo
+            //   key={`clienteKey${cliente.id}`}
+            //   cliente={cliente}
+            // ></Prestamo>
+            <div key={`prestamoKey${prestamo.id}`}>prestamo</div>
+          );
+        })}
+      </div>
     </div>
   );
 }
