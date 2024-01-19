@@ -3,7 +3,7 @@ export interface RutaInterface {
   name: string;
   created_at: Date;
   updated_at: Date;
-  clientes: ClienteInterface[];
+  clientes?: ClienteInterface[];
 }
 
 export interface ClienteInterface {
@@ -17,7 +17,7 @@ export interface ClienteInterface {
   phone2: null;
   created_at: Date;
   updated_at: Date;
-  prestamos: PrestamoInterface[];
+  prestamos?: PrestamoInterface[];
 }
 
 export interface PrestamoInterface {
@@ -36,7 +36,7 @@ export interface PrestamoInterface {
   proxima: Date;
   created_at: Date;
   updated_at: Date;
-  pagos: PagoInterface[];
+  pagos?: PagoInterface[];
 }
 
 export interface PagoInterface {

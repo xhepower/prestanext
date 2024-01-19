@@ -4,12 +4,14 @@ import { Header } from "./Components/shared/Header";
 import { Footer } from "./Components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 import "./Global.css";
+import { isLogged } from "./actions";
+import { redirect } from "next/navigation";
 export const metadata: Metadata = {
   title: "PrestaNext",
   description: "Programa de prestamos",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;

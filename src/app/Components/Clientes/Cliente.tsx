@@ -30,7 +30,7 @@ export function Cliente({ cliente }: props) {
   return (
     <div className="cliente">
       <div>
-        <p className="clienteItem">Nombre de ruta: {name}</p>
+        <p className="clienteItem">Nombre de cliente: {name}</p>
       </div>
       <div className="cliente-container">
         {prestamos.map((prestamo) => {

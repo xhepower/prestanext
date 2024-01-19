@@ -1,21 +1,18 @@
+import { Children } from "react";
 import { redirect } from "next/navigation";
 import { isLogged } from "../actions";
-import { logOff } from "../actions";
-import { borrarToken } from "../utils/auth/login";
-import { Nac } from "./Nac";
-export default async function HomeLayout({
+export default async function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const logueado = await isLogged();
-  if (!logueado) {
-    redirect("/auth/login");
+  if (logueado) {
+    redirect("/home");
   }
-
   return (
     <main>
-      <Nac></Nac>
+      <h1>Puto auth layout</h1>
       {children}
     </main>
   );

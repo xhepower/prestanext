@@ -1,4 +1,5 @@
 import http from "../http-commons";
+import { ClienteInterface } from "../interfaces";
 
 //const axios = require("axios").default;
 const obtenerToken = () => {
@@ -13,34 +14,14 @@ const obtenerToken = () => {
 };
 http.defaults.headers.common = { Authorization: `bearer ${obtenerToken()}` };
 class AppService {
-  //   constructor(tabla) {
-  //     this.tabla = tabla;
-  //   }
   async getAll() {
     return await http.get(`/rutas`, {});
   }
-  //   totalPages(parameters) {
-  //     return http.get(`/${this.tabla}/totalpages`, {
-  //       params: parameters,
-  //     });
-  //   }
+
   getOne(id: number) {
     return http.get(`/rutas?userId${id}`);
   }
-  //   async save(data) {
-  //     try {
-  //       return await http.post(`/${this.tabla}`, data);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
-
-  //   delete(id) {
-  //     return http.delete(`/${this.tabla}/${id}`);
-  //   }
-  //   update(id, data) {
-  //     return http.patch(`/${this.tabla}/${id}`, data);
-  //   }
+  crearCliente(rutaId: number, data: ClienteInterface) {}
 }
 
 const rta = new AppService();
