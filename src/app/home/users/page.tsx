@@ -34,10 +34,9 @@ export default async function UsersPage(props) {
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
-      console.log("addu");
+
       break;
     default:
-      console.log("nada");
   }
   return (
     <>

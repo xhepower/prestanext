@@ -8,7 +8,6 @@ export function Modal({
   children: React.FC;
   redir: string;
 }) {
-  console.log(redir);
   return (
     <>
       <div className="modal">
