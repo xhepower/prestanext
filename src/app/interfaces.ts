@@ -5,7 +5,17 @@ export interface RutaInterface {
   updated_at: Date;
   clientes?: ClienteInterface[];
 }
+export interface rutasGetInterface {
+  limit: number;
 
+  offset: number;
+
+  minDate: Date;
+
+  maxDate: Date;
+
+  userId: string | null;
+}
 export interface ClienteInterface {
   id: number;
   name: string;
@@ -44,4 +54,14 @@ export interface PagoInterface {
   monto: string;
   created_at: Date;
   updated_at: Date;
+}
+export interface UserInterface {
+  id: number;
+  email: string;
+  password: string;
+  role: string;
+  recoveryToken: null;
+  created_at: Date;
+  updated_at: Date;
+  rutas?: RutaInterface[];
 }

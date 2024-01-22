@@ -2,7 +2,8 @@
 
 import { redirect } from "next/navigation";
 import service from "../services/auth.services";
-import { borrarToken, guardarToken } from "app/app/utils/auth/login";
+import appService from "../services/app.service";
+import { Token, borrarToken, guardarToken } from "app/app/utils/auth/login";
 import { leerToken } from "app/app/utils/auth/login";
 
 export async function handleLogin(email: string, password: string) {
@@ -19,11 +20,29 @@ export async function handleLogin(email: string, password: string) {
     redirect("/home");
   }
 }
+export async function handleSaveUser(
+  email: string,
+  password: string,
+  role: string
+) {
+  try {
+    await appService.saveUser(email, password, role);
+  } catch (error) {
+    console.log(error);
+  }
+  redirect("/home/users");
+}
 export async function isLogged() {
   const token = leerToken();
   return token;
 }
 export async function logOff() {
   await borrarToken();
-  redirect("auth/login");
+  await redirigir("auth/login");
 }
+export async function redirigir(url: string) {
+  redirect(url);
+}
+export const obtenerJWT = async () => {
+  return Token();
+};

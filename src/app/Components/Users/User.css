@@ -1,0 +1,9 @@
+.ruta {
+  background-color: black;
+}
+.rutaItem {
+  color: var(--naranja);
+}
+.users-container {
+  overflow: scroll;
+}

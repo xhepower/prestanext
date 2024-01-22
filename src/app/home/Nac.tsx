@@ -1,18 +1,47 @@
 "use client";
 import { logOff } from "../actions";
 import { useRouter } from "next/router";
-export function Nac() {
+import { redirigir } from "../actions";
+export function Nac(props: any) {
+  const { role, sub } = props;
   async function logOut() {
     await logOff();
+  }
+  async function redireccionar(url: string) {
+    await redirigir(url);
   }
   return (
     <nav>
       <ul>
         <li>
-          <button>usuarios</button>
+          <button
+            onClick={() => {
+              redireccionar("/home");
+            }}
+          >
+            Inicio
+          </button>
         </li>
+        {role == "admin" ? (
+          <li>
+            <button
+              onClick={() => {
+                redireccionar("/home/users");
+              }}
+            >
+              usuarios
+            </button>
+          </li>
+        ) : null}
+
         <li>
-          <button>calcular</button>
+          <button
+            onClick={() => {
+              redireccionar("/home/?visibleModal=true&modal=calculate");
+            }}
+          >
+            calcular
+          </button>
         </li>
         <li>
           <button>actualizar</button>
