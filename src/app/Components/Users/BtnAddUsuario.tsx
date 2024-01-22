@@ -11,7 +11,7 @@ export async function AddUserButton() {
         redireccionar("/home/users?visibleModal=visible&modal=addUser");
       }}
     >
-      Inicio
+      Añadir usuario
     </button>
   );
 }

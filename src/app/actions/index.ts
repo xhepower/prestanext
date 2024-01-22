@@ -11,7 +11,7 @@ export async function handleLogin(email: string, password: string) {
   try {
     const rta = await service.login({ email, password });
     const { acces_token } = rta.data;
-    guardarToken(acces_token);
+    await guardarToken(acces_token);
     aja = acces_token;
   } catch (error: any) {
     console.log(error.message);
@@ -33,7 +33,7 @@ export async function handleSaveUser(
   redirect("/home/users");
 }
 export async function isLogged() {
-  const token = leerToken();
+  const token = await leerToken();
   return token;
 }
 export async function logOff() {
@@ -41,8 +41,9 @@ export async function logOff() {
   await redirigir("auth/login");
 }
 export async function redirigir(url: string) {
+  console.log(url);
   redirect(url);
 }
 export const obtenerJWT = async () => {
-  return Token();
+  return await Token();
 };

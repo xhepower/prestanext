@@ -12,16 +12,16 @@ export function Nac(props: any) {
   }
   return (
     <nav>
+      <div>
+        <button
+          onClick={() => {
+            redireccionar("/home");
+          }}
+        >
+          Inicio
+        </button>
+      </div>
       <ul>
-        <li>
-          <button
-            onClick={() => {
-              redireccionar("/home");
-            }}
-          >
-            Inicio
-          </button>
-        </li>
         {role == "admin" ? (
           <li>
             <button

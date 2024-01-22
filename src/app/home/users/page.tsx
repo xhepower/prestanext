@@ -11,9 +11,7 @@ const datos = async () => {
     const response = await appService.getAllUsers();
     return response.data;
   } catch (error) {
-    throw new Error(
-      "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
-    );
+    console.log(error);
   }
 };
 
@@ -26,7 +24,7 @@ const decoded = async () => {
 };
 export default async function UsersPage(props) {
   const { role, sub } = await decoded();
-
+  console.log(sub, role);
   const userId = sub ? sub : "";
   const { visibleModal, modal } = props.searchParams;
   const losdatos: UserInterface[] = await datos();

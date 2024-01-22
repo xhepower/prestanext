@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 import "./Global.css";
 import { isLogged } from "./actions";
 import { redirect } from "next/navigation";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 export const metadata: Metadata = {
   title: "PrestaNext",
   description: "Programa de prestamos",

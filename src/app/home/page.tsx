@@ -7,13 +7,11 @@ import { useSearchParams } from "next/navigation";
 import { Modal } from "../Components/shared/Modal";
 import { verify } from "jsonwebtoken";
 import { obtenerJWT } from "../actions";
-import { UserUi } from "../Components/Users";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 const decoded = async () => {
   const token = await obtenerJWT();
 
   const { role, sub } = verify(token.value, process.env.JWTSECRET);
-
   return { role, sub };
 };
 const datos = async (sub: string) => {
@@ -21,10 +19,12 @@ const datos = async (sub: string) => {
     const userId: string | null = sub ? sub : null;
     const response = await appService.getAll({ userId });
     return response.data;
+    console.log(response.data);
   } catch (error) {
-    throw new Error(
-      "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
-    );
+    // throw new Error(
+    //   "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
+    // );
+    console.log(error.response.data);
   }
 };
 

@@ -9,7 +9,7 @@ export async function guardarToken(token: string) {
     });
   }
 }
-export function leerToken() {
+export async function leerToken() {
   const cookiesP = cookies();
 
   return cookiesP.get("accessToken") ? true : false;
@@ -18,7 +18,7 @@ export async function borrarToken() {
   const cookiesP = cookies();
   cookiesP.delete("accessToken");
 }
-export function Token() {
+export async function Token() {
   const cookiesP = cookies();
 
   return cookiesP.get("accessToken") ? cookiesP.get("accessToken") : null;
