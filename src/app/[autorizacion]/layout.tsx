@@ -7,12 +7,10 @@ export default async function AuthLayout({
   children: React.ReactNode;
 }) {
   const logueado = await isLogged();
-  console.log(logueado);
+
   if (logueado) {
     redirect("/home");
-    console.log("ta loggueado");
   } else {
-    console.log("no ta loggueado");
   }
   return (
     <main>

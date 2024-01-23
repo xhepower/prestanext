@@ -19,7 +19,6 @@ const datos = async (sub: string) => {
     const userId: string | null = sub ? sub : null;
     const response = await appService.getAll({ userId });
     return response.data;
-    console.log(response.data);
   } catch (error) {
     // throw new Error(
     //   "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
@@ -34,8 +33,9 @@ export default async function HomePage(props: any) {
   const userId = sub ? sub : "";
   const { visibleModal, modal } = props.searchParams;
   const bvisibleModal = Boolean(visibleModal);
+  console.log(userId);
   const losdatos: RutaInterface[] = await datos(userId);
-
+  console.log(losdatos);
   return (
     <>
       {bvisibleModal ? (

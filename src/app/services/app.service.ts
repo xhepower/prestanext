@@ -5,7 +5,6 @@ import { Token } from "../utils/auth/login";
 
 //const axios = require("axios").default;
 
-// console.log(token);
 // http.defaults.headers.common = {
 //   Authorization: `bearer ${token ? token : null}`,
 // };
@@ -37,6 +36,9 @@ class AppService {
   }
   async saveUser(email: string, password: string, role: string) {
     return await http.post("/users", { email, role, password });
+  }
+  async saveRuta(name: string, userId: number) {
+    return await http.post("/rutas", { name, userId });
   }
   // getOne(id: number) {
   //   return http.get(`/rutas?userId${+id}`);

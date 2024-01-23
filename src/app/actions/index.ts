@@ -32,6 +32,14 @@ export async function handleSaveUser(
   }
   redirect("/home/users");
 }
+export async function handleSaveRuta(name: string, userId: number) {
+  try {
+    await appService.saveRuta(name, userId);
+  } catch (error) {
+    console.log(error);
+  }
+  redirect("/home/users");
+}
 export async function isLogged() {
   const token = await leerToken();
   return token;
@@ -41,7 +49,6 @@ export async function logOff() {
   await redirigir("auth/login");
 }
 export async function redirigir(url: string) {
-  console.log(url);
   redirect(url);
 }
 export const obtenerJWT = async () => {

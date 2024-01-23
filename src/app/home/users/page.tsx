@@ -5,7 +5,9 @@ import appService from "app/app/services/app.service";
 import { verify } from "jsonwebtoken";
 import { User } from "app/app/Components/Users/User";
 import { AddUser } from "app/app/Components/Users/AddUsuario";
+import { AddRuta } from "app/app/Components/Rutas/AddRuta";
 import { AddUserButton } from "app/app/Components/Users";
+import { FC } from "react";
 const datos = async () => {
   try {
     const response = await appService.getAllUsers();
@@ -24,15 +26,17 @@ const decoded = async () => {
 };
 export default async function UsersPage(props) {
   const { role, sub } = await decoded();
-  console.log(sub, role);
+
   const userId = sub ? sub : "";
-  const { visibleModal, modal } = props.searchParams;
+  const { visibleModal, modal, id } = props.searchParams;
   const losdatos: UserInterface[] = await datos();
-  let ShowModal;
+  let ShowModal: React.FC;
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
-
+      break;
+    case "addRuta":
+      ShowModal = AddRuta;
       break;
     default:
   }
@@ -42,7 +46,7 @@ export default async function UsersPage(props) {
         <>
           {visibleModal == "visible" ? (
             <Modal redir="/home/users">
-              <ShowModal></ShowModal>
+              <ShowModal id={id}></ShowModal>
             </Modal>
           ) : (
             <section className="home">

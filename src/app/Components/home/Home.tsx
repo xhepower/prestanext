@@ -10,7 +10,7 @@ interface propsInterface {
 }
 export function Home(props: propsInterface) {
   const { datos, idAdmin, role } = props;
-
+  console.log(datos);
   return (
     <section className="home">
       <div className="ruta-container">
