@@ -1,0 +1,18 @@
+.banner {
+  background-color: var(
+    --naranja-claro
+  ); /* Puedes cambiar este color a tu preferencia */
+  padding: 15px;
+  position: fixed;
+
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.titulo-banner {
+  color: white; /* Color del texto, puedes cambiarlo */
+  margin: 0;
+  text-align: end;
+  text-shadow: black;
+}

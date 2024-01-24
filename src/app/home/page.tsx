@@ -23,7 +23,7 @@ const datos = async (sub: string) => {
     // throw new Error(
     //   "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
     // );
-    console.log(error.response.data);
+    console.log(error);
   }
 };
 
@@ -33,9 +33,8 @@ export default async function HomePage(props: any) {
   const userId = sub ? sub : "";
   const { visibleModal, modal } = props.searchParams;
   const bvisibleModal = Boolean(visibleModal);
-  console.log(userId);
   const losdatos: RutaInterface[] = await datos(userId);
-  console.log(losdatos);
+
   return (
     <>
       {bvisibleModal ? (

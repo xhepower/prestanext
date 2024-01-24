@@ -4,6 +4,7 @@ import { logOff } from "../actions";
 import { borrarToken } from "../utils/auth/login";
 import { Nac } from "./Nac";
 import { verify } from "jsonwebtoken";
+import "./home.css";
 const decoded = async () => {
   const token = await obtenerJWT();
 
@@ -23,7 +24,7 @@ export default async function HomeLayout({
   }
   const { role, sub } = await decoded();
   return (
-    <main>
+    <main className="main-app">
       <Nac role={role} sub={sub}></Nac>
       {children}
     </main>

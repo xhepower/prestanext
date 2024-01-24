@@ -11,7 +11,6 @@ const schema = Yup.object().shape({
   userId: Yup.number().required(),
 });
 export function AddRuta(props: any) {
-  console.log(props);
   const formik = useFormik({
     initialValues: {
       name: "",

@@ -6,12 +6,14 @@ export async function redireccionar(url: string) {
 }
 export async function AddUserButton() {
   return (
-    <button
-      onClick={() => {
-        redireccionar("/home/users?visibleModal=visible&modal=addUser");
-      }}
-    >
-      Añadir usuario
-    </button>
+    <div className="btn-adduser-container">
+      <button
+        onClick={() => {
+          redireccionar("/home/users?visibleModal=visible&modal=addUser");
+        }}
+      >
+        Añadir usuario
+      </button>
+    </div>
   );
 }

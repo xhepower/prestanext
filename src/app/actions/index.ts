@@ -46,7 +46,7 @@ export async function isLogged() {
 }
 export async function logOff() {
   await borrarToken();
-  await redirigir("auth/login");
+  await redirigir("/auth/login");
 }
 export async function redirigir(url: string) {
   redirect(url);

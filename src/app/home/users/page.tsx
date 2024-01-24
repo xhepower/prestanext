@@ -49,7 +49,7 @@ export default async function UsersPage(props) {
               <ShowModal id={id}></ShowModal>
             </Modal>
           ) : (
-            <section className="home">
+            <section className="main-container">
               <AddUserButton></AddUserButton>
               <div className="users-container">
                 {losdatos?.map((user) => {

@@ -1,14 +1,13 @@
 import Image from "next/image";
+import "./Header.css";
 export function Header() {
+  console.log(process.env.NOMBRE_EMPRESA);
   return (
     <header>
       <section>
-        <Image
-          src="/images/banner.png"
-          alt="banner header"
-          width={300}
-          height={100}
-        />
+        <div className="banner">
+          <h1 className="titulo-banner">{process.env.NOMBRE_EMPRESA}</h1>
+        </div>
       </section>
     </header>
   );

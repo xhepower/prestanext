@@ -6,12 +6,6 @@ export default async function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const logueado = await isLogged();
-
-  if (logueado) {
-    redirect("/home");
-  } else {
-  }
   return (
     <main>
       <h1>Puto auth layout</h1>

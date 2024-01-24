@@ -1,0 +1,68 @@
+.main-app {
+  top: 50px;
+  position: fixed;
+}
+nav {
+  top: 5px;
+  position: relative;
+  display: flex;
+  width: 320px;
+  justify-content: space-around;
+}
+.boton-home-container {
+  display: flex;
+  justify-content: space-around;
+
+  list-style-type: none;
+  gap: 20px;
+}
+
+.main-container {
+  position: relative;
+  top: 20px;
+}
+.users-container,
+.ruta-container {
+  background-color: pink;
+  overflow: auto;
+  max-height: 650px;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  text-align: right;
+}
+.boton-nav {
+  border-radius: 30px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: transparent;
+  background-color: var(--naranja-claro);
+}
+.boton-home {
+  background-image: url("/iconos/home_icon-icons.com_73532.ico");
+}
+.boton-users {
+  background-image: url("/iconos/icono-users.ico");
+}
+.boton-li {
+}
+.boton-calculate {
+  background-image: url("/iconos/calculator_3534.ico");
+}
+.boton-actualizar {
+  background-image: url("/iconos/icon-update.ico");
+}
+.boton-salir {
+  background-image: url("/iconos/salir.ico");
+}
+.btn-adduser-container {
+  display: flex;
+  justify-content: right;
+}

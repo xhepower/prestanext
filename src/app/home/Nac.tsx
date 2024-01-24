@@ -2,6 +2,7 @@
 import { logOff } from "../actions";
 import { useRouter } from "next/router";
 import { redirigir } from "../actions";
+import "./home.css";
 export function Nac(props: any) {
   const { role, sub } = props;
   async function logOut() {
@@ -14,42 +15,42 @@ export function Nac(props: any) {
     <nav>
       <div>
         <button
+          className="boton-nav boton-home"
           onClick={() => {
             redireccionar("/home");
           }}
         >
-          Inicio
+          I
         </button>
       </div>
-      <ul>
+      <div className="boton-home-container">
         {role == "admin" ? (
-          <li>
-            <button
-              onClick={() => {
-                redireccionar("/home/users");
-              }}
-            >
-              usuarios
-            </button>
-          </li>
-        ) : null}
-
-        <li>
           <button
+            className="boton-nav boton-users boton-li"
             onClick={() => {
-              redireccionar("/home/?visibleModal=true&modal=calculate");
+              redireccionar("/home/users");
             }}
           >
-            calcular
+            U
           </button>
-        </li>
-        <li>
-          <button>actualizar</button>
-        </li>
-        <li>
-          <button onClick={logOut}>cerrar sesion</button>
-        </li>
-      </ul>
+        ) : null}
+
+        <button
+          className="boton-nav boton-calculate boton-li"
+          onClick={() => {
+            redireccionar("/home/?visibleModal=true&modal=calculate");
+          }}
+        >
+          C
+        </button>
+
+        <button className="boton-nav boton-actualizar boton-li">A</button>
+      </div>
+      <div>
+        <button className="boton-nav  boton-salir" onClick={logOut}>
+          X
+        </button>
+      </div>
     </nav>
   );
 }

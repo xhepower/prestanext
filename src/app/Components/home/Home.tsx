@@ -10,9 +10,8 @@ interface propsInterface {
 }
 export function Home(props: propsInterface) {
   const { datos, idAdmin, role } = props;
-  console.log(datos);
   return (
-    <section className="home">
+    <section className="main-container">
       <div className="ruta-container">
         {datos?.map((ruta) => {
           const key: string = `ruta${ruta.id}`;
