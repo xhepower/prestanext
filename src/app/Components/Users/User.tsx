@@ -19,17 +19,23 @@ export function User({ user }: userPropsInterface) {
   };
   const handleAddRuta = () => {};
   return (
-    <div className="cliente">
-      <div className="card">
-        <div className="datos">
-          <p className="clienteItem">Nombre de usuario: {email}</p>
-          <p className="clienteItem">Rol: {role}</p>
+    <div className="usuario-container">
+      <div className="card-usuario">
+        <div className="datos-usuario">
+          <p className="datos-usuario-item"> {email}</p>
+          <p className="datos-usuario-item datos-usuario-role">{role}</p>
         </div>
-        <div className="botones">
-          <button onClick={handleVer}>ver</button>
+        <div className="botones botones-usuario">
           <button
+            className="boton-ver boton-card boton-card-users"
+            onClick={handleVer}
+          >
+            ver
+          </button>
+          <button
+            className=" boton-card boton-add-ruta
+            boton-card-users"
             onClick={() => {
-              ///home/users?visibleModal=visible&modal=addRuta&userId=$
               redireccionar(
                 `/home/users?visibleModal=visible&modal=addRuta&id=${id}`
               );
@@ -40,7 +46,8 @@ export function User({ user }: userPropsInterface) {
         </div>
       </div>
       {visible ? (
-        <div className="ruta-container">
+        <div className="rutas-container">
+          <h3 className="titulo-ruta">Rutas</h3>
           {rutas?.map((ruta) => {
             return (
               <Ruta

@@ -1,0 +1,55 @@
+.modal {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 30px;
+  border: 2px solid var(--naranja-claro);
+  display: flex;
+  flex-direction: column;
+}
+.overlay {
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+}
+.modal-cerrar {
+  background-image: url("/iconos/close.ico");
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--naranja-oscuro);
+  padding: 5px;
+}
+.app-form {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gris-oscuro);
+  color: white;
+  padding: 5px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.titulo-form {
+  text-align: center;
+  color: var(--naranja-claro);
+  font-size: 1.2rem;
+}
+select {
+  text-align: center;
+}
+.app-form-label {
+  margin: 5px 0;
+}
+.app-form-input {
+  margin: 5px 0;
+  background-color: var(--gris-claro);
+  border-radius: 5px;
+}
+.btn-primary {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid var(--gris-oscuro);
+  background-color: var(--naranja-claro);
+}

@@ -3,15 +3,7 @@ import type { NextPage } from "next";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import {
-  Button,
-  Checkbox,
-  FormControlLabel,
-  FormHelperText,
-  InputLabel,
-  MenuItem,
-  TextField,
-} from "@mui/material";
+
 // Yup schema to validate the form
 const schema = Yup.object().shape({
   email: Yup.string().required().email(),
@@ -41,7 +33,7 @@ const Login: NextPage = (props) => {
   const { errors, touched, values, handleChange, handleSubmit } = formik;
 
   return (
-    <form onSubmit={handleSubmit} method="POST">
+    <form onSubmit={handleSubmit} method="POST" className="form form-login">
       <label htmlFor="email">Email</label>
       <input
         type="email"
@@ -49,6 +41,7 @@ const Login: NextPage = (props) => {
         value={values.email}
         onChange={handleChange}
         id="email"
+        className="input input-login"
       />
       {errors.email && touched.email && <span>{errors.email}</span>}
 
@@ -59,10 +52,13 @@ const Login: NextPage = (props) => {
         value={values.password}
         onChange={handleChange}
         id="password"
+        className="input input-login"
       />
       {errors.password && touched.password && <span>{errors.password}</span>}
 
-      <button type="submit">Submit</button>
+      <button type="submit" className="button button-primary button-login">
+        Ingresar
+      </button>
     </form>
   );
 };

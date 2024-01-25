@@ -1,0 +1,29 @@
+.login-container {
+  position: fixed;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+  width: 100%;
+}
+.form {
+  align-self: center;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+  background-color: var(--naranja-claro);
+  margin: 10px;
+}
+.form-login {
+}
+.button-login {
+  background-color: var(--gris-oscuro);
+  color: var(--naranja);
+}

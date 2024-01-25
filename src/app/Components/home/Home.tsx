@@ -12,7 +12,7 @@ export function Home(props: propsInterface) {
   const { datos, idAdmin, role } = props;
   return (
     <section className="main-container">
-      <div className="ruta-container">
+      <div className="rutas-container">
         {datos?.map((ruta) => {
           const key: string = `ruta${ruta.id}`;
 

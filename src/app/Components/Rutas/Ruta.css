@@ -1,6 +1,40 @@
-.ruta {
-  background-color: black;
+.ruta-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gris-claro);
+  color: black;
+  width: 100%;
+  border: 2px solid black;
+  padding: 3px;
 }
-.rutaItem {
-  color: var(--naranja);
+.card-ruta {
+  display: flex;
+
+  width: 100%;
+  font-size: 1rem;
+}
+.titulo-ruta {
+  background-color: var(--gris-claro);
+  color: black;
+  text-align: center;
+}
+.datos-ruta {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  word-wrap: break-word;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.boton-add-cliente {
+  /* background-image: url("/iconos/ruta.ico"); */
+}
+.boton-card-ruta {
+  border: 3px solid gray;
+}
+.rutas-container {
+  background-color: var(--gris-claro);
 }

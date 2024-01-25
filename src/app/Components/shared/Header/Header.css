@@ -8,6 +8,7 @@
   left: 0;
   width: 100%;
   text-align: left;
+  max-width: 320px;
 }
 
 .titulo-banner {

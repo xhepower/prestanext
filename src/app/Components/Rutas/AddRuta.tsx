@@ -28,17 +28,22 @@ export function AddRuta(props: any) {
   const { errors, touched, values, handleChange, handleSubmit } = formik;
 
   return (
-    <form method="POST" onSubmit={handleSubmit}>
-      <label htmlFor="name">Nombre de Ruta</label>
+    <form method="POST" onSubmit={handleSubmit} className="app-form">
+      <label htmlFor="name" className="app-form-label">
+        Nombre de Ruta
+      </label>
       <input
         type="name"
         name="name"
         value={values.name}
         onChange={handleChange}
         id="name"
+        className="app-form-input"
       />
       {errors.name && touched.name && <span>{errors.name}</span>}
-      <button type="submit">Guardar usuario</button>
+      <button type="submit" className="btn-primary">
+        Guardar ruta
+      </button>
     </form>
   );
 }

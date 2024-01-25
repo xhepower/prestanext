@@ -15,15 +15,25 @@ export function Ruta({ ruta, dropVisible }: rutaPropsInterface) {
     setVisible(!visible);
   };
   return (
-    <div className="ruta">
-      <div className="card">
-        <div className="datos">
-          <p className="rutaItem">Nombre de ruta: {name}</p>
+    <div className="ruta-container">
+      <div className="card-ruta">
+        <div className="datos-ruta">
+          <p className="datos-ruta-item"> {name}</p>
         </div>
         {dropVisible && (
-          <div className="botones">
-            <button onClick={handleVer}>ver</button>
-            <button>añadir</button>
+          <div className="botones botones-ruta">
+            <button
+              className="boton-ver boton-card boton-card-ruta"
+              onClick={handleVer}
+            >
+              ver
+            </button>
+            <button
+              className=" boton-card boton-add-cliente
+            boton-card-ruta"
+            >
+              añadir
+            </button>
           </div>
         )}
       </div>

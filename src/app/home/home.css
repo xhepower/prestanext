@@ -1,6 +1,7 @@
 .main-app {
   top: 50px;
   position: fixed;
+  max-width: 320px;
 }
 nav {
   top: 5px;
@@ -11,7 +12,7 @@ nav {
 }
 .boton-home-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   list-style-type: none;
   gap: 20px;
@@ -20,20 +21,14 @@ nav {
 .main-container {
   position: relative;
   top: 20px;
+  padding: 5px;
 }
 .users-container,
 .ruta-container {
-  background-color: pink;
   overflow: auto;
-  max-height: 650px;
+  max-height: 80vh;
 }
 
-footer {
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-  text-align: right;
-}
 .boton-nav {
   border-radius: 30px;
   cursor: pointer;
@@ -44,6 +39,7 @@ footer {
   padding: 10px;
   color: transparent;
   background-color: var(--naranja-claro);
+  border: 3px solid var(--gris-oscuro);
 }
 .boton-home {
   background-image: url("/iconos/home_icon-icons.com_73532.ico");
@@ -65,4 +61,11 @@ footer {
 .btn-adduser-container {
   display: flex;
   justify-content: right;
+  margin-bottom: 10px;
+}
+.btn-adduser {
+  color: var(--gris-oscuro);
+  background-color: var(--naranja-claro);
+  border: 3px solid var(--gris-oscuro);
+  border-radius: 5px;
 }

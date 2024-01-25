@@ -1,9 +1,49 @@
-.ruta {
-  background-color: black;
+.usuario-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(black);
+  color: var(--naranja-claro);
+  width: 100%;
+  border: 2px solid var(--naranja-claro);
+  padding: 3px;
 }
-.rutaItem {
-  color: var(--naranja);
+.card-usuario {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+}
+.titulo-usuarios {
+  background-color: black;
+  color: var(--naranja-claro);
+  text-align: center;
+}
+.datos-usuario {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  word-wrap: break-word;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.boton-add-ruta {
+  background-image: url("/iconos/ruta.ico");
+}
+.boton-card-users {
+  border: 3px solid gray;
+}
+.rutas-container {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--naranja-claro);
+  width: 100%;
+  border: 2px solid var(--naranja-claro);
+  padding: 3px;
 }
 .users-container {
-  overflow: scroll;
+  background-color: black;
 }

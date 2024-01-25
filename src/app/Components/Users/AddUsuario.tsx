@@ -29,39 +29,53 @@ export function AddUser(props: any) {
   });
   const { errors, touched, values, handleChange, handleSubmit } = formik;
   return (
-    <form method="POST" onSubmit={handleSubmit}>
-      <label htmlFor="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        value={values.email}
-        onChange={handleChange}
-        id="email"
-      />
-      {errors.email && touched.email && <span>{errors.email}</span>}
+    <>
+      <form method="POST" onSubmit={handleSubmit} className="app-form ">
+        <h2 className="titulo-form">Agregar un usuario.</h2>
+        <label htmlFor="email" className="app-form-label">
+          Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          className="app-form-input"
+          value={values.email}
+          onChange={handleChange}
+          id="email"
+        />
+        {errors.email && touched.email && <span>{errors.email}</span>}
 
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        value={values.password}
-        onChange={handleChange}
-        id="password"
-      />
-      {errors.password && touched.password && <span>{errors.password}</span>}
+        <label htmlFor="password" className="app-form-label">
+          Password
+        </label>
+        <input
+          type="password"
+          name="password"
+          className="app-form-input"
+          value={values.password}
+          onChange={handleChange}
+          id="password"
+        />
+        {errors.password && touched.password && <span>{errors.password}</span>}
 
-      <label htmlFor="role">Elija un rol</label>
-      <select
-        id="role"
-        name="roles"
-        value={values.password}
-        onChange={handleChange}
-      >
-        <option value="admin">Admin</option>
-        <option value="cobrador">Cobrador</option>
-      </select>
-      {errors.role && touched.role && <span>{errors.role}</span>}
-      <button type="submit">Guardar usuario</button>
-    </form>
+        <label htmlFor="role" className="app-form-label">
+          Elija un rol
+        </label>
+        <select
+          id="role"
+          name="roles"
+          value={values.password}
+          onChange={handleChange}
+          className="app-form-input"
+        >
+          <option value="admin">Admin</option>
+          <option value="cobrador">Cobrador</option>
+        </select>
+        {errors.role && touched.role && <span>{errors.role}</span>}
+        <button type="submit" className="btn-primary">
+          Guardar usuario
+        </button>
+      </form>
+    </>
   );
 }

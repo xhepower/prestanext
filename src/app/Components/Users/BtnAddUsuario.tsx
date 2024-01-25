@@ -11,6 +11,7 @@ export async function AddUserButton() {
         onClick={() => {
           redireccionar("/home/users?visibleModal=visible&modal=addUser");
         }}
+        className="btn-adduser"
       >
         Añadir usuario
       </button>

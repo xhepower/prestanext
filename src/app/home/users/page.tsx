@@ -52,6 +52,7 @@ export default async function UsersPage(props) {
             <section className="main-container">
               <AddUserButton></AddUserButton>
               <div className="users-container">
+                <h2 className="titulo-usuarios">Usuarios</h2>
                 {losdatos?.map((user) => {
                   const key: string = `user${user.id}`;
 
