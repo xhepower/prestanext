@@ -7,10 +7,14 @@ interface rutaPropsInterface {
 }
 import "./Ruta.css";
 import { useState } from "react";
+import { redirigir } from "app/app/actions";
 
+async function redireccionar(url: string) {
+  await redirigir(url);
+}
 export function Ruta({ ruta, dropVisible }: rutaPropsInterface) {
   const [visible, setVisible] = useState<boolean>(false);
-  const { name, clientes } = ruta;
+  const { name, clientes, id } = ruta;
   const handleVer = () => {
     setVisible(!visible);
   };
@@ -31,6 +35,11 @@ export function Ruta({ ruta, dropVisible }: rutaPropsInterface) {
             <button
               className=" boton-card boton-add-cliente
             boton-card-ruta"
+              onClick={() => {
+                redireccionar(
+                  `/home?visibleModal=visible&modal=addCliente&id=${id}`
+                );
+              }}
             >
               añadir
             </button>
@@ -38,13 +47,11 @@ export function Ruta({ ruta, dropVisible }: rutaPropsInterface) {
         )}
       </div>
       {visible ? (
-        <div className="cliente-container">
+        <div className="clientes-container">
+          <h4 className="titulo-cliente">Clientes</h4>
           {clientes?.map((cliente) => {
             return (
-              <Cliente
-                key={`clienteKey${cliente.id}`}
-                cliente={cliente}
-              ></Cliente>
+              <Cliente key={`rutaKey${ruta.id}`} cliente={cliente}></Cliente>
             );
           })}
         </div>

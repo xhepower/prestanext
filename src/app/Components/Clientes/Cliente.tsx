@@ -3,7 +3,10 @@ import { ClienteInterface } from "app/app/interfaces";
 interface props {
   cliente: ClienteInterface;
 }
+import { useState } from "react";
+import "./Cliente.css";
 export function Cliente({ cliente }: props) {
+  const [visible, setVisible] = useState<boolean>(false);
   const {
     id,
 
@@ -27,21 +30,35 @@ export function Cliente({ cliente }: props) {
 
     prestamos,
   } = cliente;
+  const handleVer = () => {
+    setVisible(!visible);
+  };
   return (
-    <div className="cliente">
-      <div>
-        <p className="clienteItem">Nombre de cliente: {name}</p>
-      </div>
-      <div className="cliente-container">
-        {prestamos.map((prestamo) => {
-          return (
-            // <Prestamo
-            //   key={`clienteKey${cliente.id}`}
-            //   cliente={cliente}
-            // ></Prestamo>
-            <div key={`prestamoKey${prestamo.id}`}>prestamo</div>
-          );
-        })}
+    <div className="cliente-container">
+      <div className="card-cliente">
+        <div className="datos-cliente">
+          <p className="datos-cliente-item"> {name}</p>
+          <p className="datos-cliente-item"> {dni}</p>
+          <p className="datos-cliente-item"> {city}</p>
+          <p className="datos-cliente-item"> {hood}</p>
+          <p className="datos-cliente-item"> {business}</p>
+          <p className="datos-cliente-item"> {phone1}</p>
+          <p className="datos-cliente-item"> {phone2}</p>
+        </div>
+        <div className="botones botones-cliente">
+          <button
+            className="boton-ver boton-card boton-card-cliente"
+            onClick={handleVer}
+          >
+            ver
+          </button>
+          <button
+            className=" boton-card boton-add-prestamo
+            boton-card-cliente"
+          >
+            añadir
+          </button>
+        </div>
       </div>
     </div>
   );

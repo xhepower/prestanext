@@ -6,6 +6,7 @@ import { verify } from "jsonwebtoken";
 import { User } from "app/app/Components/Users/User";
 import { AddUser } from "app/app/Components/Users/AddUsuario";
 import { AddRuta } from "app/app/Components/Rutas/AddRuta";
+import { AddCliente } from "app/app/Components/Clientes/AddCliente";
 import { AddUserButton } from "app/app/Components/Users";
 import { FC } from "react";
 const datos = async () => {

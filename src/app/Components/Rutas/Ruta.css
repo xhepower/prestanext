@@ -30,7 +30,7 @@
   gap: 5px;
 }
 .boton-add-cliente {
-  /* background-image: url("/iconos/ruta.ico"); */
+  background-image: url("/iconos/add_user.ico");
 }
 .boton-card-ruta {
   border: 3px solid gray;

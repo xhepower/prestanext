@@ -1,13 +1,14 @@
 import appService from "../services/app.service";
-const data = { email: "xhepo@xhepo.com", password: "superman" };
 
 import { Home } from "../Components/home";
-import { RutaInterface, rutasGetInterface } from "../interfaces";
-import { useSearchParams } from "next/navigation";
+import { RutaInterface } from "../interfaces";
+import { AddUser } from "../Components/Users";
+import { AddRuta } from "../Components/Rutas/AddRuta";
+import { AddCliente } from "../Components/Clientes/AddCliente";
 import { Modal } from "../Components/shared/Modal";
 import { verify } from "jsonwebtoken";
 import { obtenerJWT } from "../actions";
-import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
+import { Ruta } from "../Components/Rutas";
 const decoded = async () => {
   const token = await obtenerJWT();
 
@@ -20,9 +21,6 @@ const datos = async (sub: string) => {
     const response = await appService.getAll({ userId });
     return response.data;
   } catch (error) {
-    // throw new Error(
-    //   "¡Mierda! Hubo un error: " + (error instanceof Error ? error.message : "")
-    // );
     console.log(error);
   }
 };
@@ -31,16 +29,45 @@ export default async function HomePage(props: any) {
   const { role, sub } = await decoded();
 
   const userId = sub ? sub : "";
-  const { visibleModal, modal } = props.searchParams;
-  const bvisibleModal = Boolean(visibleModal);
-  const losdatos: RutaInterface[] = await datos(userId);
 
+  const { visibleModal, modal, id } = props.searchParams;
+  const losdatos: RutaInterface[] = await datos(userId);
+  let ShowModal: React.FC;
+  switch (modal) {
+    case "addUser":
+      ShowModal = AddUser;
+      break;
+    case "addRuta":
+      ShowModal = AddRuta;
+      break;
+    case "addCliente":
+      ShowModal = AddCliente;
+      break;
+    default:
+  }
   return (
     <>
-      {bvisibleModal ? (
-        <Modal role={role} sub={sub} />
+      {role == "admin" ? (
+        <>
+          {visibleModal == "visible" ? (
+            <Modal redir="/home">
+              <ShowModal id={id}></ShowModal>
+            </Modal>
+          ) : (
+            <section className="main-container">
+              <div className="rutas-container">
+                <h2 className="titulo-rutas">Rutas</h2>
+                {losdatos?.map((ruta) => {
+                  const key: string = `ruta${ruta.id}`;
+
+                  return <Ruta key={key} ruta={ruta} dropVisible={true}></Ruta>;
+                })}
+              </div>
+            </section>
+          )}
+        </>
       ) : (
-        <Home datos={losdatos} role={role} idAdmin={sub ? +sub : null}></Home>
+        "No tiene permiso para esta ruta"
       )}
     </>
   );
