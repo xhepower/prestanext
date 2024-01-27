@@ -24,7 +24,7 @@ nav {
   padding: 5px;
 }
 .users-container,
-.ruta-container {
+.rutas-container {
   overflow: auto;
   max-height: 80vh;
 }

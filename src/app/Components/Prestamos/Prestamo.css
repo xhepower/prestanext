@@ -1,24 +1,24 @@
-.cliente-container {
+.prestamo-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--gris-medio);
+  background-color: var(--gris-claro);
   color: var(--naranja);
   width: 100%;
   border: 1px dashed var(--naranja);
   padding: 3px;
 }
-.card-cliente {
+.card-prestamo {
   display: flex;
 
   width: 100%;
   font-size: 1rem;
 }
-.titulo-cliente {
-  background-color: var(--gris-medio);
+.titulo-prestamo {
+  background-color: var(--gris-claro);
   color: var(--naranja);
   text-align: center;
 }
-.datos-cliente {
+.datos-prestamo {
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -29,13 +29,13 @@
   align-items: center;
   gap: 5px;
 }
-.boton-add-prestamo {
-  background-image: url("/iconos/prestamo.ico");
+.boton-add-pago {
+  background-image: url("/iconos/pago.ico");
 }
-.boton-card-cliente {
+.boton-card-prestamo {
   border: 3px solid gray;
 }
-.clientes-container {
-  background-color: var(--gris-medio);
+.prestamos-container {
+  background-color: var(--gris-claro);
   padding-left: 6px;
 }

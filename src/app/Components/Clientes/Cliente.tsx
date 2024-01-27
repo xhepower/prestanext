@@ -5,6 +5,8 @@ interface props {
 }
 import { useState } from "react";
 import "./Cliente.css";
+import { redirigir } from "app/app/actions";
+import { Prestamo } from "../Prestamos";
 export function Cliente({ cliente }: props) {
   const [visible, setVisible] = useState<boolean>(false);
   const {
@@ -33,6 +35,10 @@ export function Cliente({ cliente }: props) {
   const handleVer = () => {
     setVisible(!visible);
   };
+  async function redireccionar(url: string) {
+    await redirigir(url);
+  }
+  console.log(prestamos);
   return (
     <div className="cliente-container">
       <div className="card-cliente">
@@ -55,11 +61,29 @@ export function Cliente({ cliente }: props) {
           <button
             className=" boton-card boton-add-prestamo
             boton-card-cliente"
+            onClick={() => {
+              redireccionar(
+                `/home?visibleModal=visible&modal=addPrestamo&id=${id}`
+              );
+            }}
           >
             añadir
           </button>
         </div>
       </div>
+      {visible ? (
+        <div className="prestamos-container">
+          <h5 className="titulo-prestamos">Prestamos</h5>
+          {prestamos?.map((prestamo) => {
+            return (
+              <Prestamo
+                key={`rutaKey${prestamo.id}`}
+                prestamo={prestamo}
+              ></Prestamo>
+            );
+          })}
+        </div>
+      ) : null}
     </div>
   );
 }

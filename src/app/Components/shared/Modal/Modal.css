@@ -6,7 +6,10 @@
   border: 2px solid var(--naranja-claro);
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  max-height: 80vh;
 }
+
 .overlay {
   display: flex;
   justify-content: right;

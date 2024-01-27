@@ -1,10 +1,10 @@
 .ruta-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--gris-claro);
-  color: black;
+  background-color: var(--gris-oscuro);
+  color: var(--naranja-claro);
   width: 100%;
-  border: 2px solid black;
+
   padding: 3px;
 }
 .card-ruta {
@@ -14,8 +14,8 @@
   font-size: 1rem;
 }
 .titulo-ruta {
-  background-color: var(--gris-claro);
-  color: black;
+  background-color: var(--gris-oscuro);
+  color: var(--naranja-claro);
   text-align: center;
 }
 .datos-ruta {
@@ -36,5 +36,6 @@
   border: 3px solid gray;
 }
 .rutas-container {
-  background-color: var(--gris-claro);
+  background-color: var(--gris-oscuro);
+  padding-left: 3px;
 }

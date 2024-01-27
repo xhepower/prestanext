@@ -40,6 +40,54 @@ class AppService {
   async saveRuta(name: string, userId: number) {
     return await http.post("/rutas", { name, userId });
   }
+  async saveCliente({
+    name,
+
+    dni,
+
+    city,
+
+    hood,
+
+    business,
+
+    phone1,
+
+    phone2,
+    rutaId,
+  }: {
+    name: string;
+
+    dni: string;
+
+    city: string;
+
+    hood: string;
+
+    business: string;
+
+    phone1: string;
+
+    phone2: string;
+    rutaId: number;
+  }) {
+    return await http.post("/clientes", {
+      name,
+
+      dni,
+
+      city,
+
+      hood,
+
+      business,
+
+      phone1,
+
+      phone2,
+      rutaId,
+    });
+  }
   // getOne(id: number) {
   //   return http.get(`/rutas?userId${+id}`);
   // }

@@ -43,6 +43,12 @@ export default async function HomePage(props: any) {
     case "addCliente":
       ShowModal = AddCliente;
       break;
+    case "addPrestamo":
+      ShowModal = AddCliente;
+      break;
+    case "addPago":
+      ShowModal = AddCliente;
+      break;
     default:
   }
   return (
@@ -56,7 +62,7 @@ export default async function HomePage(props: any) {
           ) : (
             <section className="main-container">
               <div className="rutas-container">
-                <h2 className="titulo-rutas">Rutas</h2>
+                <h2 className="titulo-ruta">Rutas</h2>
                 {losdatos?.map((ruta) => {
                   const key: string = `ruta${ruta.id}`;
 

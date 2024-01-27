@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { handleSaveRuta, redirigir } from "app/app/actions";
+import { handleSaveRuta } from "app/app/actions";
 
 // Yup schema to validate the form
 const schema = Yup.object().shape({
@@ -29,6 +29,7 @@ export function AddRuta(props: any) {
 
   return (
     <form method="POST" onSubmit={handleSubmit} className="app-form">
+      <h2 className="titulo-form"> Añadir ruta nueva</h2>
       <label htmlFor="name" className="app-form-label">
         Nombre de Ruta
       </label>
