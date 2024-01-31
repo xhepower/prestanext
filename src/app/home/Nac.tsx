@@ -1,7 +1,7 @@
 "use client";
 import { logOff } from "../actions";
 import { useRouter } from "next/router";
-import { redirigir } from "../actions";
+import { redirigir, actualizar } from "../actions";
 import "./home.css";
 export function Nac(props: any) {
   const { role, sub } = props;
@@ -10,6 +10,9 @@ export function Nac(props: any) {
   }
   async function redireccionar(url: string) {
     await redirigir(url);
+  }
+  async function actualizarSistema() {
+    await actualizar();
   }
   return (
     <nav>
@@ -38,13 +41,27 @@ export function Nac(props: any) {
         <button
           className="boton-nav boton-calculate boton-li"
           onClick={() => {
-            redireccionar("/home/?visibleModal=true&modal=calculate");
+            redireccionar("/home/calculate");
           }}
         >
           C
         </button>
-
-        <button className="boton-nav boton-actualizar boton-li">A</button>
+        <button
+          className="boton-nav boton-reportes boton-li"
+          onClick={() => {
+            redireccionar("/home/reportes");
+          }}
+        >
+          C
+        </button>
+        <button
+          className="boton-nav boton-actualizar boton-li"
+          onClick={() => {
+            actualizarSistema();
+          }}
+        >
+          A
+        </button>
       </div>
       <div>
         <button className="boton-nav  boton-salir" onClick={logOut}>

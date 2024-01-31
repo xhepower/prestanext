@@ -37,37 +37,93 @@ class AppService {
   async saveUser(email: string, password: string, role: string) {
     return await http.post("/users", { email, role, password });
   }
+  async actualizar() {
+    return await http.post("/prestamos/actualizar");
+  }
   async saveRuta(name: string, userId: number) {
     return await http.post("/rutas", { name, userId });
   }
+  async calculate({
+    inicio,
+    vencimiento,
+    capital,
+    porcentaje,
+    frecuencia,
+  }: {
+    inicio: Date;
+    vencimiento: Date;
+    capital: number;
+    porcentaje: number;
+    frecuencia: string;
+  }) {
+    const rta = await http.post("/prestamos/plan", {
+      inicio,
+      vencimiento,
+      capital,
+      porcentaje,
+      frecuencia,
+    });
+    console.log(rta.data);
+    return rta;
+  }
+  async savePrestamo({
+    inicio,
+    vencimiento,
+    capital,
+    porcentaje,
+    frecuencia,
+    porcentajemora,
+    clienteId,
+  }: {
+    inicio: Date;
+    vencimiento: Date;
+    capital: number;
+    porcentaje: number;
+    frecuencia: string;
+    porcentajemora: number;
+    clienteId: number;
+  }) {
+    return await http.post("/prestamos", {
+      inicio,
+      vencimiento,
+      capital,
+      porcentaje,
+      frecuencia,
+      porcentajemora,
+      clienteId,
+    });
+  }
+  async savePago({
+    monto,
+    fecha,
+    prestamoId,
+  }: {
+    monto: number;
+    fecha: Date;
+    prestamoId: number;
+  }) {
+    return await http.post("/pagos", {
+      monto,
+      fecha,
+      prestamoId,
+    });
+  }
   async saveCliente({
     name,
-
     dni,
-
     city,
-
     hood,
-
     business,
-
     phone1,
-
     phone2,
     rutaId,
   }: {
     name: string;
-
     dni: string;
-
     city: string;
-
     hood: string;
-
     business: string;
-
     phone1: string;
-
     phone2: string;
     rutaId: number;
   }) {

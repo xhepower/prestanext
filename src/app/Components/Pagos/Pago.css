@@ -1,24 +1,24 @@
-.prestamo-container {
+.pago-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--gris-claro);
-  color: var(--naranja);
+  background-color: white;
+  color: black;
   width: 100%;
-  border: 1px dashed var(--naranja);
+  border: 1px dashed black;
   padding: 3px;
 }
-.card-prestamo {
+.card-pago {
   display: flex;
 
   width: 100%;
   font-size: 1rem;
 }
-.titulo-prestamo {
-  background-color: var(--gris-claro);
-  color: var(--naranja);
+.titulo-pago {
+  background-color: white;
+  color: black;
   text-align: center;
 }
-.datos-prestamo {
+.datos-pago {
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -32,10 +32,10 @@
 .boton-add-pago {
   background-image: url("/iconos/pago.ico");
 }
-.boton-card-prestamo {
+.boton-card-pago {
   border: 3px solid gray;
 }
-.prestamos-container {
-  background-color: var(--gris-claro);
-  padding-left: 9px;
+.pagos-container {
+  background-color: white;
+  padding-left: 6px;
 }

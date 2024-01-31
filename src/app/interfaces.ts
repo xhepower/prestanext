@@ -34,13 +34,14 @@ export interface PrestamoInterface {
   id: number;
   inicio: Date;
   vencimiento: Date;
-  capital: string;
-  porcentaje: string;
-  porcentajemora: string;
-  cuota: string;
-  intereses: string;
-  mora: string;
-  total: string;
+  capital: number;
+  porcentaje: number;
+  porcentajemora: number;
+  cuota: number;
+  intereses: number;
+  mora: number;
+  total: number;
+  saldo: number;
   estado: string;
   frecuencia: string;
   proxima: Date;
@@ -52,6 +53,9 @@ export interface PrestamoInterface {
 export interface PagoInterface {
   id: number;
   monto: string;
+  saldoAnterior?: number;
+  saldoActual?: number;
+  fecha: Date;
   created_at: Date;
   updated_at: Date;
 }

@@ -1,5 +1,5 @@
 import { Modal } from "app/app/Components/shared/Modal";
-import { obtenerJWT, redirigir } from "app/app/actions";
+import { actualizar, obtenerJWT, redirigir } from "app/app/actions";
 import { UserInterface } from "app/app/interfaces";
 import appService from "app/app/services/app.service";
 import { verify } from "jsonwebtoken";

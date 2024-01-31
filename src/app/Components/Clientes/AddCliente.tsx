@@ -132,3 +132,10 @@ export function AddCliente(props: any) {
     </form>
   );
 }
+// inicio,
+//         vencimiento,
+//         capital,
+//         porcentaje,
+//         frecuencia,
+//         porcentajemora,
+//         clienteId: +props.id,

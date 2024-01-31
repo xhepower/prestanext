@@ -7,8 +7,10 @@ import { AddRuta } from "../Components/Rutas/AddRuta";
 import { AddCliente } from "../Components/Clientes/AddCliente";
 import { Modal } from "../Components/shared/Modal";
 import { verify } from "jsonwebtoken";
-import { obtenerJWT } from "../actions";
+import { actualizar, obtenerJWT } from "../actions";
 import { Ruta } from "../Components/Rutas";
+import { AddPrestamo } from "../Components/Prestamos/AddPrestamo";
+import { AddPago } from "../Components/Pagos/AddPago";
 const decoded = async () => {
   const token = await obtenerJWT();
 
@@ -26,6 +28,7 @@ const datos = async (sub: string) => {
 };
 
 export default async function HomePage(props: any) {
+  actualizar();
   const { role, sub } = await decoded();
 
   const userId = sub ? sub : "";
@@ -44,37 +47,34 @@ export default async function HomePage(props: any) {
       ShowModal = AddCliente;
       break;
     case "addPrestamo":
-      ShowModal = AddCliente;
+      ShowModal = AddPrestamo;
       break;
     case "addPago":
-      ShowModal = AddCliente;
+      ShowModal = AddPago;
       break;
     default:
   }
+
   return (
     <>
-      {role == "admin" ? (
-        <>
-          {visibleModal == "visible" ? (
-            <Modal redir="/home">
-              <ShowModal id={id}></ShowModal>
-            </Modal>
-          ) : (
-            <section className="main-container">
-              <div className="rutas-container">
-                <h2 className="titulo-ruta">Rutas</h2>
-                {losdatos?.map((ruta) => {
-                  const key: string = `ruta${ruta.id}`;
+      <>
+        {visibleModal == "visible" ? (
+          <Modal redir="/home">
+            <ShowModal id={id}></ShowModal>
+          </Modal>
+        ) : (
+          <section className="main-container">
+            <div className="rutas-container">
+              <h2 className="titulo-ruta">Rutas</h2>
+              {losdatos?.map((ruta) => {
+                const key: string = `ruta${ruta.id}`;
 
-                  return <Ruta key={key} ruta={ruta} dropVisible={true}></Ruta>;
-                })}
-              </div>
-            </section>
-          )}
-        </>
-      ) : (
-        "No tiene permiso para esta ruta"
-      )}
+                return <Ruta key={key} ruta={ruta} dropVisible={true}></Ruta>;
+              })}
+            </div>
+          </section>
+        )}
+      </>
     </>
   );
 }

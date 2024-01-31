@@ -69,3 +69,31 @@ nav {
   border: 3px solid var(--gris-oscuro);
   border-radius: 5px;
 }
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+.titulo-tabla {
+}
+.plan-item {
+}
+.plan {
+  color: var(--naranja-claro);
+  background-color: var(--gris-oscuro);
+  display: flex;
+  flex-direction: column;
+}
+.plan-tabla {
+  width: auto;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+.plan-encabezado {
+  white-space: normal;
+  text-align: center;
+}
+.plan-numero {
+  text-align: right;
+}

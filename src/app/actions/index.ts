@@ -40,19 +40,100 @@ export async function handleSaveRuta(name: string, userId: number) {
   }
   redirect("/home/users");
 }
+export async function actualizar() {
+  try {
+    await appService.actualizar();
+  } catch (error) {
+    console.error(error);
+  }
+}
+export async function handleCalculate({
+  inicio,
+  vencimiento,
+  capital,
+  porcentaje,
+  frecuencia,
+}: {
+  inicio: Date;
+  vencimiento: Date;
+  capital: number;
+  porcentaje: number;
+  frecuencia: string;
+}) {
+  try {
+    let jijo;
+
+    const rta = await appService.calculate({
+      inicio,
+      vencimiento,
+      capital,
+      porcentaje,
+      frecuencia,
+    });
+    return rta.data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+export async function handleSavePago({
+  monto,
+  fecha,
+  prestamoId,
+}: {
+  monto: number;
+  fecha: Date;
+  prestamoId: number;
+}) {
+  try {
+    await appService.savePago({
+      monto,
+      fecha,
+      prestamoId,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  redirect("/home");
+}
+export async function handleSavePrestamo({
+  inicio,
+  vencimiento,
+  capital,
+  porcentaje,
+  frecuencia,
+  porcentajemora,
+  clienteId,
+}: {
+  inicio: Date;
+  vencimiento: Date;
+  capital: number;
+  porcentaje: number;
+  frecuencia: string;
+  porcentajemora: number;
+  clienteId: number;
+}) {
+  try {
+    await appService.savePrestamo({
+      inicio,
+      vencimiento,
+      capital,
+      porcentaje,
+      frecuencia,
+      porcentajemora,
+      clienteId,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  redirect("/home");
+}
 export async function handleSaveCliente({
   name,
-
   dni,
-
   city,
-
   hood,
-
   business,
-
   phone1,
-
   phone2,
   rutaId,
 }: {
@@ -75,15 +156,10 @@ export async function handleSaveCliente({
     await appService.saveCliente({
       name,
       dni,
-
       city,
-
       hood,
-
       business,
-
       phone1,
-
       phone2,
       rutaId,
     });

@@ -1,10 +1,11 @@
 import "./Prestamo.css";
-import { ClienteInterface, PrestamoInterface } from "app/app/interfaces";
+import { PrestamoInterface } from "app/app/interfaces";
 interface props {
   prestamo: PrestamoInterface;
 }
 import { useState } from "react";
 import { redirigir } from "app/app/actions";
+import { Pago } from "../Pagos";
 export function Prestamo({ prestamo }: props) {
   const [visible, setVisible] = useState<boolean>(false);
   const {
@@ -16,6 +17,7 @@ export function Prestamo({ prestamo }: props) {
     porcentajemora,
     cuota,
     intereses,
+    saldo,
     mora,
     total,
     estado,
@@ -40,6 +42,7 @@ export function Prestamo({ prestamo }: props) {
           <p className="datos-prestamo-item"> {`porcentaje: ${porcentaje}%`}</p>
           <p className="datos-prestamo-item"> {`mora: ${mora}`}</p>
           <p className="datos-prestamo-item"> {`total: ${total}`}</p>
+          <p className="datos-prestamo-item"> {`saldo: ${saldo}`}</p>
           <p className="datos-prestamo-item">{`vencimiento: ${vencimiento}`}</p>
         </div>
         <div className="botones botones-prestamo">
@@ -62,6 +65,14 @@ export function Prestamo({ prestamo }: props) {
           </button>
         </div>
       </div>
+      {visible ? (
+        <div className="pagos-container">
+          <h5 className="titulo-pagos">Pagos</h5>
+          {pagos?.map((pago) => {
+            return <Pago key={`pagoKey${pago.id}`} pago={pago}></Pago>;
+          })}
+        </div>
+      ) : null}
     </div>
   );
 }
