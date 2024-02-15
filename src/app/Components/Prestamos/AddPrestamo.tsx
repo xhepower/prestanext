@@ -13,7 +13,6 @@ const schema = Yup.object().shape({
 });
 export function AddPrestamo(props: any) {
   const verificarValor = (id: string) => {
-    console.log(id);
     const inputNumero = document.getElementById(id) as HTMLInputElement;
     if (inputNumero.value.trim() === "") {
       // Si el campo está vacío, establece el valor como cero
@@ -109,7 +108,7 @@ export function AddPrestamo(props: any) {
         Fecha desembolso
       </label>
       <input
-        type="date"
+        type="datetime-local"
         name="inicio"
         onChange={handleChange}
         id="inicio"
@@ -119,7 +118,7 @@ export function AddPrestamo(props: any) {
         Fecha vencimiento
       </label>
       <input
-        type="date"
+        type="datetime-local"
         name="vencimiento"
         onChange={handleChange}
         id="vencimiento"

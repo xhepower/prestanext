@@ -8,7 +8,6 @@ const schema = Yup.object().shape({
 });
 export function AddPago(props: any) {
   const verificarValor = (id: string) => {
-    console.log(id);
     const inputNumero = document.getElementById(id) as HTMLInputElement;
     if (inputNumero.value.trim() === "") {
       // Si el campo está vacío, establece el valor como cero
@@ -57,7 +56,7 @@ export function AddPago(props: any) {
         Fecha
       </label>
       <input
-        type="date"
+        type="datetime-local"
         name="fecha"
         onChange={handleChange}
         id="fecha"

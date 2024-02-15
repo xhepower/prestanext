@@ -63,7 +63,15 @@ class AppService {
       porcentaje,
       frecuencia,
     });
-    console.log(rta.data);
+
+    return rta;
+  }
+  async Reportes({ inicio, final }: { inicio: Date; final: Date }) {
+    const rta = await http.post("/reportes", {
+      inicio,
+      final,
+    });
+
     return rta;
   }
   async savePrestamo({

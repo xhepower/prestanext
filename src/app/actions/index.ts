@@ -32,6 +32,20 @@ export async function handleSaveUser(
   }
   redirect("/home/users");
 }
+export async function handleReporte({
+  inicio,
+  final,
+}: {
+  inicio: Date;
+  final: Date;
+}) {
+  try {
+    const rta = await appService.Reportes({ inicio, final });
+    return rta.data;
+  } catch (error) {
+    console.log(error);
+  }
+}
 export async function handleSaveRuta(name: string, userId: number) {
   try {
     await appService.saveRuta(name, userId);

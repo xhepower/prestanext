@@ -25,7 +25,6 @@ export default function CalculatePage() {
   const [planRta, setPlanRta] = useState<rtaInterface>();
 
   const verificarValor = (id: string) => {
-    console.log(id);
     const inputNumero = document.getElementById(id) as HTMLInputElement;
     if (inputNumero.value.trim() === "") {
       // Si el campo está vacío, establece el valor como cero
@@ -48,13 +47,6 @@ export default function CalculatePage() {
       porcentaje,
       frecuencia,
     }) => {
-      console.log({
-        inicio,
-        vencimiento,
-        capital,
-        porcentaje,
-        frecuencia,
-      });
       const rta = await handleCalculate({
         inicio,
         vencimiento,
@@ -62,9 +54,8 @@ export default function CalculatePage() {
         porcentaje,
         frecuencia,
       });
-      console.log(rta);
+
       setPlanRta(rta);
-      console.log(planRta);
     },
   });
   const { errors, touched, values, handleChange, handleSubmit } = formik;
@@ -111,7 +102,7 @@ export default function CalculatePage() {
             Fecha desembolso
           </label>
           <input
-            type="date"
+            type="datetime-local"
             name="inicio"
             onChange={handleChange}
             id="inicio"
@@ -121,7 +112,7 @@ export default function CalculatePage() {
             Fecha vencimiento
           </label>
           <input
-            type="date"
+            type="datetime-local"
             name="vencimiento"
             onChange={handleChange}
             id="vencimiento"

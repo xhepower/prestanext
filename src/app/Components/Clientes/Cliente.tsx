@@ -38,7 +38,7 @@ export function Cliente({ cliente }: props) {
   async function redireccionar(url: string) {
     await redirigir(url);
   }
-  console.log(prestamos);
+
   return (
     <div className="cliente-container">
       <div className="card-cliente">

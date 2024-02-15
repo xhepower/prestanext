@@ -1,7 +1,6 @@
 import Image from "next/image";
 import "./Header.css";
 export function Header() {
-  console.log(process.env.NOMBRE_EMPRESA);
   return (
     <header>
       <section>
