@@ -47,6 +47,9 @@ nav {
 .boton-users {
   background-image: url("/iconos/icono-users.ico");
 }
+.boton-reportes {
+  background-image: url("/iconos/reportes.ico");
+}
 .boton-li {
 }
 .boton-calculate {

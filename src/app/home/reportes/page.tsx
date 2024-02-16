@@ -30,6 +30,7 @@ export default function ReportesPage() {
     },
   });
   const { errors, touched, values, handleChange, handleSubmit } = formik;
+  console.log(reporte);
   return (
     <section className="main-container">
       <div className="rutas-container">
@@ -60,6 +61,7 @@ export default function ReportesPage() {
             Crear reporte
           </button>
         </form>
+
         <Reporte reporte={reporte}></Reporte>
       </div>
     </section>

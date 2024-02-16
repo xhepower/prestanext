@@ -3,15 +3,13 @@
 import { useState } from "react";
 
 export function Reporte(props: any) {
-  const { prestamos, pagos } = props.reporte;
-  console.log(prestamos, pagos);
-  const [sPrestamos, setSprestamos] = useState(0);
-  let sumaPrestamos = 0;
+  const { prestamos, pagos, sumaPrestamos, sumaPagos } = props.reporte;
+  console.log(props.reporte);
   return (
     <div>
       {prestamos ? (
         <details>
-          <summary>{`Prestamos ${sumaPrestamos}`}</summary>
+          <summary>{`Prestamos ${sumaPrestamos.toFixed(2)}`}</summary>
           <table>
             <thead>
               <tr>
@@ -22,7 +20,6 @@ export function Reporte(props: any) {
             </thead>
             <tbody>
               {prestamos.map((prestamo: any) => {
-                sumaPrestamos += prestamo.capital;
                 return (
                   <tr key={`reportePrestamo${prestamo.id}`}>
                     <td>{prestamo.inicio}</td>
@@ -33,19 +30,32 @@ export function Reporte(props: any) {
               })}
             </tbody>
           </table>
-          {/* {prestamos.map((prestamo: any) => {
-            return (
-              <div key={`reportePrestamo${prestamo.id}`}>
-                <p>{prestamo.inicio}</p>
-              </div>
-            );
-          })} */}
         </details>
       ) : null}
 
       {pagos ? (
         <details>
-          <summary>Pagos </summary>
+          <summary>{`Pagos ${sumaPagos.toFixed(2)}`}</summary>
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Prestamo</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pagos.map((pago: any) => {
+                return (
+                  <tr key={`reportePago${pago.id}`}>
+                    <td>{pago.fecha}</td>
+                    <td>{pago.prestamo.id}</td>
+                    <td>{pago.monto}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </details>
       ) : null}
     </div>
