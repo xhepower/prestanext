@@ -21,10 +21,10 @@ class AuthService {
   login(data: loginData) {
     return http.post("/auth/login", data);
   }
-  recoveryPassword(data) {
+  recoveryPassword(data: any) {
     return http.post("/auth/recovery", data);
   }
-  changePassword(data) {
+  changePassword(data: any) {
     return http.post("/auth/change-password", data);
   }
 }

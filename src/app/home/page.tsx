@@ -44,7 +44,7 @@ export default async function HomePage(props: any) {
 
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: RutaInterface[] = await datos(userId);
-  let ShowModal: React.FC;
+  let ShowModal: React.FC<{ id: any }>;
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
@@ -62,12 +62,13 @@ export default async function HomePage(props: any) {
       ShowModal = AddPago;
       break;
     default:
+      throw new Error("Modal desconocido");
   }
 
   return (
     <>
       <>
-        {visibleModal == "visible" && ShowModal ? (
+        {visibleModal == "visible" ? (
           <Modal redir="/home">
             <ShowModal id={id}></ShowModal>
           </Modal>

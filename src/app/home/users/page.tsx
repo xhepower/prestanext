@@ -21,17 +21,26 @@ const datos = async () => {
 const decoded = async () => {
   const token = await obtenerJWT();
 
-  const { role, sub } = verify(token.value, process.env.JWTSECRET);
+  let role;
+  let sub;
+  if (token && token.value && process.env.JWTSECRET) {
+    const payload = verify(token.value, process.env.JWTSECRET);
+    role = payload.sub;
+    sub = payload.sub;
+    // Resto del código utilizando role y sub
+  } else {
+    // Manejar el caso en que token o token.value es undefined
+  }
 
   return { role, sub };
 };
-export default async function UsersPage(props) {
+export default async function UsersPage(props: any) {
   const { role, sub } = await decoded();
 
   const userId = sub ? sub : "";
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: UserInterface[] = await datos();
-  let ShowModal: React.FC;
+  let ShowModal: React.FC<{ id: any }>;
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
@@ -40,6 +49,7 @@ export default async function UsersPage(props) {
       ShowModal = AddRuta;
       break;
     default:
+      throw new Error("Modal desconocido");
   }
   return (
     <>
