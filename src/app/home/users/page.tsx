@@ -2,7 +2,7 @@ import { Modal } from "app/app/Components/shared/Modal";
 import { actualizar, obtenerJWT, redirigir } from "app/app/actions";
 import { UserInterface } from "app/app/interfaces";
 import appService from "app/app/services/app.service";
-import { verify } from "jsonwebtoken";
+import { JwtPayload, verify } from "jsonwebtoken";
 import { User } from "app/app/Components/Users/User";
 import { AddUser } from "app/app/Components/Users/AddUsuario";
 import { AddRuta } from "app/app/Components/Rutas/AddRuta";
@@ -23,11 +23,14 @@ const decoded = async () => {
 
   let role;
   let sub;
+
   if (token && token.value && process.env.JWTSECRET) {
-    const payload = verify(token.value, process.env.JWTSECRET);
-    role = payload.sub;
-    sub = payload.sub;
-    // Resto del código utilizando role y sub
+    const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
+    console.log(typeof pay);
+    if (typeof pay === "object") {
+      role = pay.role;
+      sub = pay.sub;
+    }
   } else {
     // Manejar el caso en que token o token.value es undefined
   }
@@ -40,7 +43,7 @@ export default async function UsersPage(props: any) {
   const userId = sub ? sub : "";
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: UserInterface[] = await datos();
-  let ShowModal: React.FC<{ id: any }>;
+  let ShowModal: React.FC<{ id: any }> | null;
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
@@ -49,13 +52,13 @@ export default async function UsersPage(props: any) {
       ShowModal = AddRuta;
       break;
     default:
-      throw new Error("Modal desconocido");
+      ShowModal = null;
   }
   return (
     <>
       {role == "admin" ? (
         <>
-          {visibleModal == "visible" ? (
+          {visibleModal == "visible" && ShowModal ? (
             <Modal redir="/home/users">
               <ShowModal id={id}></ShowModal>
             </Modal>

@@ -5,6 +5,7 @@ import { redirigir, actualizar } from "../actions";
 import "./home.css";
 export function Nac(props: any) {
   const { role, sub } = props;
+  console.log(role, sub);
   async function logOut() {
     await logOff();
   }

@@ -6,7 +6,7 @@ import { AddUser } from "../Components/Users";
 import { AddRuta } from "../Components/Rutas/AddRuta";
 import { AddCliente } from "../Components/Clientes/AddCliente";
 import { Modal } from "../Components/shared/Modal";
-import { verify } from "jsonwebtoken";
+import { JwtPayload, verify } from "jsonwebtoken";
 import { actualizar, obtenerJWT } from "../actions";
 import { Ruta } from "../Components/Rutas";
 import { AddPrestamo } from "../Components/Prestamos/AddPrestamo";
@@ -17,10 +17,12 @@ const decoded = async () => {
   let role;
   let sub;
   if (token && token.value && process.env.JWTSECRET) {
-    const payload = verify(token.value, process.env.JWTSECRET);
-    role = payload.sub;
-    sub = payload.sub;
-    // Resto del código utilizando role y sub
+    const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
+    console.log(typeof pay);
+    if (typeof pay === "object") {
+      role = pay.role;
+      sub = pay.sub;
+    }
   } else {
     // Manejar el caso en que token o token.value es undefined
   }
@@ -44,7 +46,7 @@ export default async function HomePage(props: any) {
 
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: RutaInterface[] = await datos(userId);
-  let ShowModal: React.FC<{ id: any }>;
+  let ShowModal: React.FC<{ id: any }> | null;
   switch (modal) {
     case "addUser":
       ShowModal = AddUser;
@@ -62,13 +64,14 @@ export default async function HomePage(props: any) {
       ShowModal = AddPago;
       break;
     default:
-      throw new Error("Modal desconocido");
+      ShowModal = null;
   }
 
   return (
     <>
       <>
-        {visibleModal == "visible" ? (
+        {console.log(ShowModal)}
+        {visibleModal == "visible" && ShowModal ? (
           <Modal redir="/home">
             <ShowModal id={id}></ShowModal>
           </Modal>

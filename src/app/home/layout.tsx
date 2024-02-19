@@ -3,22 +3,25 @@ import { isLogged, obtenerJWT } from "../actions";
 import { logOff } from "../actions";
 import { borrarToken } from "../utils/auth/login";
 import { Nac } from "./Nac";
-import { verify } from "jsonwebtoken";
+import { JwtPayload, verify } from "jsonwebtoken";
 import "./home.css";
 const decoded = async () => {
   const token = await obtenerJWT();
   let role;
   let sub;
   if (token && token.value && process.env.JWTSECRET) {
-    const payload = verify(token.value, process.env.JWTSECRET);
-    role = payload.sub;
-    sub = payload.sub;
+    const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
+    console.log(typeof pay);
+    if (typeof pay === "object") {
+      role = pay.role;
+      sub = pay.sub;
+    }
+    // const payit:{role:string,sub:string}=pay
+    //;
     // Resto del código utilizando role y sub
   } else {
     // Manejar el caso en que token o token.value es undefined
   }
-  // const { role, sub } = verify(token.value?, process.env.JWTSECRET);
-
   return { role, sub };
 };
 export default async function HomeLayout({
