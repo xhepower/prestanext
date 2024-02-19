@@ -11,10 +11,19 @@ import { actualizar, obtenerJWT } from "../actions";
 import { Ruta } from "../Components/Rutas";
 import { AddPrestamo } from "../Components/Prestamos/AddPrestamo";
 import { AddPago } from "../Components/Pagos/AddPago";
+import { string } from "yup";
 const decoded = async () => {
   const token = await obtenerJWT();
-
-  const { role, sub } = verify(token.value, process.env.JWTSECRET);
+  let role;
+  let sub;
+  if (token && token.value && process.env.JWTSECRET) {
+    const payload = verify(token.value, process.env.JWTSECRET);
+    role = payload.sub;
+    sub = payload.sub;
+    // Resto del código utilizando role y sub
+  } else {
+    // Manejar el caso en que token o token.value es undefined
+  }
   return { role, sub };
 };
 const datos = async (sub: string) => {
@@ -29,9 +38,9 @@ const datos = async (sub: string) => {
 
 export default async function HomePage(props: any) {
   actualizar();
-  const { role, sub } = await decoded();
-
-  const userId = sub ? sub : "";
+  const payload = await decoded();
+  const { role, sub } = payload;
+  const userId = typeof sub === "string" ? sub : "";
 
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: RutaInterface[] = await datos(userId);
@@ -58,7 +67,7 @@ export default async function HomePage(props: any) {
   return (
     <>
       <>
-        {visibleModal == "visible" ? (
+        {visibleModal == "visible" && ShowModal ? (
           <Modal redir="/home">
             <ShowModal id={id}></ShowModal>
           </Modal>

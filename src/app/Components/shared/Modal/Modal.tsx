@@ -6,7 +6,7 @@ export function Modal({
   children,
   redir,
 }: {
-  children: React.FC;
+  children: React.ReactNode;
   redir: string;
 }) {
   async function redireccionar(url: string) {

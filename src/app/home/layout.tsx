@@ -7,8 +7,17 @@ import { verify } from "jsonwebtoken";
 import "./home.css";
 const decoded = async () => {
   const token = await obtenerJWT();
-
-  const { role, sub } = verify(token?.value, process.env.JWTSECRET);
+  let role;
+  let sub;
+  if (token && token.value && process.env.JWTSECRET) {
+    const payload = verify(token.value, process.env.JWTSECRET);
+    role = payload.sub;
+    sub = payload.sub;
+    // Resto del código utilizando role y sub
+  } else {
+    // Manejar el caso en que token o token.value es undefined
+  }
+  // const { role, sub } = verify(token.value?, process.env.JWTSECRET);
 
   return { role, sub };
 };
