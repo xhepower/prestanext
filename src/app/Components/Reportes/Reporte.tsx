@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export function Reporte(props: any) {
   const { prestamos, pagos, sumaPrestamos, sumaPagos } = props.reporte;
-  console.log(props.reporte);
+  console.log("reporte", props.reporte);
   return (
     <div>
       {prestamos ? (
