@@ -1,4 +1,4 @@
-// File: /media/xhepo/Nuevo vol3/projects/prestanext/src/app/[autorizacion]/login/page.tsx
+// File: D:\projects\prestanext\src\app\[autorizacion]\login\page.tsx
 import * as entry from '../../../../../src/app/[autorizacion]/login/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

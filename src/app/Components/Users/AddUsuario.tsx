@@ -64,7 +64,7 @@ export function AddUser(props: any) {
         <select
           id="role"
           name="roles"
-          value={values.password}
+          value={values.role}
           onChange={handleChange}
           className="app-form-input"
         >

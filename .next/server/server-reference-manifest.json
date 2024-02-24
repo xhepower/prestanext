@@ -1,1 +1,188 @@
-{"node":{"0785c53d9754ca61d214fa1ccad72d865ddfc8e6":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"1d3f6793b222d80d1d54c2e974516cfe03a1709c":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"22838a2d5f6bd0cd777d41297e4e47cc20d0e4c7":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"536a8c2b3c8ac4b6f11e08e891a4adbd027d6721":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"563d0e1fd0e2844ebe010a59ae49fb9338ea8215":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"5bf5332a71182e8ae38ba129702880d101a712a0":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"75220ce7eaeec1c4bd4141a9d6556dbc542a850a":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"b4b7bd2957972672c9d44454ceec749a7d68ba4c":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"d008241667b80543a4c1f0b89d2426d6c09906c6":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"d53151f3321c2537c731dc630525f9968d5ed473":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"ea416d63a93d9127f408ed2a2c119156a3636075":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"fe313f7db73c0a5990a61471f83208dee7e37123":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}},"fefe69edeab0b5e2be67b9cb51c09276ac9ec82c":{"workers":{"app/home/calculate/page":24104,"app/home/page":24104,"app/home/users/page":24104,"app/home/reportes/page":24104,"app/[autorizacion]/login/page":25568},"layer":{"app/home/calculate/page":"rsc","app/home/page":"rsc","app/home/users/page":"rsc","app/home/reportes/page":"rsc","app/[autorizacion]/login/page":"action-browser"}}},"edge":{},"encryptionKey":"dU4y8y2gJPFIis2U13ks1zoxOopPgIQ+mECOjBZYZJQ="}
+{
+  "node": {
+    "1fb2cfb10f9eb24d97a5f347ab640f422a168ce3": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "29bd1c9cf4537fd8dacdf6e83e97d6a643fdb5f3": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "78c377ed1bc3e384bea43aea41debed67d1eb8cf": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "8773bcac3dee6cc0a70cc209589ed4c8b9422057": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "94661f98fe5b750b0b233b3ef6b5b3a7bc956784": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "9b18e1dfafe2820daf18aa3d61483dd79488ac83": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "a50558f6b4e58985c8519be24052fa3f31aba910": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "a67413ee80c09dd2e2e455a8df4bdd18183a37a3": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "a75a63980ee9737419f9f7465be1de3e5add7703": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "a9aaf5517804e09af5023c9243d9b1dcd5b14c57": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "da1f83d08845ee285c71be39ea2e7a3da7539271": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "dd8a9608a31f2c22ac40c79f5d86b09e26db4a5e": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    },
+    "f43b2ce2eadf269963a47ae96d8cda43fbb43dbe": {
+      "workers": {
+        "app/home/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/[autorizacion]/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=true!",
+        "app/home/users/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!",
+        "app/home/reportes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5Cprojects%5C%5Cprestanext%5C%5Csrc%5C%5Capp%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22handleSaveCliente%22%2C%22actualizar%22%2C%22obtenerJWT%22%2C%22handleSaveUser%22%2C%22logOff%22%2C%22handleSaveRuta%22%2C%22handleLogin%22%2C%22handleReporte%22%2C%22isLogged%22%2C%22handleCalculate%22%2C%22redirigir%22%2C%22handleSavePrestamo%22%2C%22handleSavePago%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/home/page": "rsc",
+        "app/[autorizacion]/login/page": "action-browser",
+        "app/home/users/page": "rsc",
+        "app/home/reportes/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "tQp01/nkkqtKEbh6NNlOjj6bM+fixpN3Q1ZFYngWIFA="
+}
