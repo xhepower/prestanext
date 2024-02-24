@@ -1,4 +1,4 @@
-// File: /media/xhepo/Nuevo vol3/projects/prestanext/src/app/[autorizacion]/layout.tsx
+// File: /home/xhepo/Escritorio/Projects/prestanext/src/app/[autorizacion]/layout.tsx
 import * as entry from '../../../../src/app/[autorizacion]/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
