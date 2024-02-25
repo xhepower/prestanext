@@ -47,14 +47,17 @@ export function Nac(props: any) {
         >
           C
         </button>
-        <button
-          className="boton-nav boton-reportes boton-li"
-          onClick={() => {
-            redireccionar("/home/reportes");
-          }}
-        >
-          C
-        </button>
+
+        {role == "admin" ? (
+          <button
+            className="boton-nav boton-reportes boton-li"
+            onClick={() => {
+              redireccionar("/home/reportes");
+            }}
+          >
+            R
+          </button>
+        ) : null}
         <button
           className="boton-nav boton-actualizar boton-li"
           onClick={() => {
