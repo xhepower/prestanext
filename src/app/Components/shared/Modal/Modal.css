@@ -33,6 +33,7 @@
   align-content: center;
   text-align: center;
   border-radius: 10px;
+  overflow-y: scroll;
 }
 .titulo-form {
   text-align: center;

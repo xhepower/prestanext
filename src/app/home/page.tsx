@@ -18,7 +18,7 @@ const decoded = async () => {
   let sub;
   if (token && token.value && process.env.JWTSECRET) {
     const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
-    console.log(typeof pay);
+
     if (typeof pay === "object") {
       role = pay.role;
       sub = pay.sub;
@@ -43,9 +43,17 @@ export default async function HomePage(props: any) {
   const payload = await decoded();
   const { role, sub } = payload;
   const userId = typeof sub === "string" ? sub : "";
-
   const { visibleModal, modal, id } = props.searchParams;
+  let datillos;
   const losdatos: RutaInterface[] = await datos(userId);
+
+  if (role == "admin") {
+    datillos = losdatos;
+  } else {
+    datillos = losdatos.filter((e: any) => {
+      return sub == e.user.id.toString();
+    });
+  }
   let ShowModal: React.FC<{ id: any }> | null;
   switch (modal) {
     case "addUser":
@@ -70,7 +78,6 @@ export default async function HomePage(props: any) {
   return (
     <>
       <>
-        {console.log(ShowModal)}
         {visibleModal == "visible" && ShowModal ? (
           <Modal redir="/home">
             <ShowModal id={id}></ShowModal>
@@ -79,7 +86,7 @@ export default async function HomePage(props: any) {
           <section className="main-container">
             <div className="rutas-container">
               <h2 className="titulo-ruta">Rutas</h2>
-              {losdatos?.map((ruta) => {
+              {datillos?.map((ruta) => {
                 const key: string = `ruta${ruta.id}`;
 
                 return <Ruta key={key} ruta={ruta} dropVisible={true}></Ruta>;
