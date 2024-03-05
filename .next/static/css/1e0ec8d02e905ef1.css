@@ -1,0 +1,1 @@
+.login-container{position:fixed;top:30px;height:80vh}.form,.login-container{display:flex;justify-content:center;align-content:center;width:100%}.form{align-self:center;border-radius:25px;flex-direction:column;padding:10px;text-align:center;gap:10px;background-color:var(--naranja-claro);margin:10px}.button-login{background-color:var(--gris-oscuro);color:var(--naranja)}
