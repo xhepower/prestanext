@@ -184,6 +184,7 @@ export async function handleSaveCliente({
 }
 export async function isLogged() {
   const token = await leerToken();
+  console.log(token);
   return token;
 }
 export async function logOff() {

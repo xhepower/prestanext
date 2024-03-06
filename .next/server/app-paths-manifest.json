@@ -1,6 +1,1 @@
-{
-  "/not-found": "app/not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/home/page": "app/home/page.js",
-  "/[autorizacion]/login/page": "app/[autorizacion]/login/page.js"
-}
+{}

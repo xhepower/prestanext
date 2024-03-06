@@ -7,6 +7,7 @@ import { JwtPayload, verify } from "jsonwebtoken";
 import "./home.css";
 const decoded = async () => {
   const token = await obtenerJWT();
+  console.log(token);
   let role;
   let sub;
   if (token && token.value && process.env.JWTSECRET) {
