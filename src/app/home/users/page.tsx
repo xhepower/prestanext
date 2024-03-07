@@ -19,30 +19,25 @@ const datos = async () => {
 };
 
 const decoded = async () => {
-  const token = await obtenerJWT();
-
+  const token = (await obtenerJWT()) || null;
   let role;
   let sub;
 
   if (token && token.value && process.env.JWTSECRET) {
     const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
-    console.log(typeof pay);
     if (typeof pay === "object") {
       role = pay.role;
       sub = pay.sub;
     }
-  } else {
-    // Manejar el caso en que token o token.value es undefined
   }
 
   return { role, sub };
 };
 export default async function UsersPage(props: any) {
   const { role, sub } = await decoded();
-
-  const userId = sub ? sub : "";
   const { visibleModal, modal, id } = props.searchParams;
   const losdatos: UserInterface[] = await datos();
+
   let ShowModal: React.FC<{ id: any }> | null;
   switch (modal) {
     case "addUser":
@@ -54,6 +49,7 @@ export default async function UsersPage(props: any) {
     default:
       ShowModal = null;
   }
+  console.log(role);
   return (
     <>
       {role == "admin" ? (

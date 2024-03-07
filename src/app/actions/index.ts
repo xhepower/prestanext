@@ -3,8 +3,7 @@
 import { redirect } from "next/navigation";
 import service from "../services/auth.services";
 import appService from "../services/app.service";
-import { Token, borrarToken, guardarToken } from "app/app/utils/auth/login";
-import { leerToken } from "app/app/utils/auth/login";
+import { leerToken, borrarToken, guardarToken } from "app/app/utils/auth/login";
 
 export async function handleLogin(email: string, password: string) {
   let aja: string = "";
@@ -184,7 +183,6 @@ export async function handleSaveCliente({
 }
 export async function isLogged() {
   const token = await leerToken();
-  console.log(token);
   return token;
 }
 export async function logOff() {
@@ -195,5 +193,5 @@ export async function redirigir(url: string) {
   redirect(url);
 }
 export const obtenerJWT = async () => {
-  return await Token();
+  return await leerToken();
 };

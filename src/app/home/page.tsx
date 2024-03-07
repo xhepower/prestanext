@@ -1,6 +1,5 @@
 import appService from "../services/app.service";
 
-import { Home } from "../Components/home";
 import { RutaInterface } from "../interfaces";
 import { AddUser } from "../Components/Users";
 import { AddRuta } from "../Components/Rutas/AddRuta";
@@ -11,27 +10,24 @@ import { actualizar, obtenerJWT } from "../actions";
 import { Ruta } from "../Components/Rutas";
 import { AddPrestamo } from "../Components/Prestamos/AddPrestamo";
 import { AddPago } from "../Components/Pagos/AddPago";
-import { string } from "yup";
+
 const decoded = async () => {
-  const token = await obtenerJWT();
+  const token = (await obtenerJWT()) || null;
   let role;
   let sub;
   if (token && token.value && process.env.JWTSECRET) {
     const pay: string | JwtPayload = verify(token.value, process.env.JWTSECRET);
-
     if (typeof pay === "object") {
       role = pay.role;
       sub = pay.sub;
     }
-  } else {
-    // Manejar el caso en que token o token.value es undefined
   }
+
   return { role, sub };
 };
-const datos = async (sub: string) => {
+const datos = async () => {
   try {
-    const userId: string | null = sub ? sub : null;
-    const response = await appService.getAll({ userId });
+    const response = await appService.getAll();
     return response.data;
   } catch (error) {
     console.log(error);
@@ -42,10 +38,10 @@ export default async function HomePage(props: any) {
   actualizar();
   const payload = await decoded();
   const { role, sub } = payload;
-  const userId = typeof sub === "string" ? sub : "";
   const { visibleModal, modal, id } = props.searchParams;
-  let datillos;
-  const losdatos: RutaInterface[] = await datos(userId);
+
+  let datillos = [];
+  const losdatos: RutaInterface[] = await datos();
 
   if (role == "admin") {
     datillos = losdatos;

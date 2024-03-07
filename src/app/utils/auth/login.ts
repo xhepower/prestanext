@@ -12,7 +12,7 @@ export async function guardarToken(token: string) {
 export async function leerToken() {
   const cookiesP = cookies();
 
-  return cookiesP.get("accessToken") ? true : false;
+  return cookiesP.get("accessToken") ? cookiesP.get("accessToken") : null;
 }
 export async function borrarToken() {
   const cookiesP = cookies();

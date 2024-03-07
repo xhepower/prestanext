@@ -1,13 +1,7 @@
 import { obtenerJWT } from "../actions";
 import http from "../http-commons";
 import { ClienteInterface } from "../interfaces";
-import { Token } from "../utils/auth/login";
-
-//const axios = require("axios").default;
-
-// http.defaults.headers.common = {
-//   Authorization: `bearer ${token ? token : null}`,
-// };
+import { leerToken } from "../utils/auth/login";
 
 class AppService {
   constructor() {
@@ -16,19 +10,13 @@ class AppService {
     })();
   }
   obtenerToken = async () => {
-    //   let token;
-    //   if (localStorage.getItem("superdupertoken")) {
-    //     token = localStorage.getItem("superdupertoken");
-    //   } else {
-    //     token = null;
-    //   }
-    //   return token;
-    const token = (await Token())?.value;
+    const token = await leerToken();
+
     http.defaults.headers.common = {
-      Authorization: `bearer ${token ? token : null}`,
+      Authorization: `bearer ${token ? token.value : null}`,
     };
   };
-  async getAll(params: any) {
+  async getAll(params?: any) {
     return await http.get(`/rutas`, { params });
   }
   async getAllUsers() {
