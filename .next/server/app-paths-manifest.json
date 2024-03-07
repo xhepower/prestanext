@@ -1,9 +1,9 @@
 {
   "/_not-found": "app/_not-found.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/[autorizacion]/login/page": "app/[autorizacion]/login/page.js",
   "/home/page": "app/home/page.js",
+  "/[autorizacion]/login/page": "app/[autorizacion]/login/page.js",
+  "/home/calculate/page": "app/home/calculate/page.js",
   "/home/reportes/page": "app/home/reportes/page.js",
-  "/home/users/page": "app/home/users/page.js",
-  "/home/calculate/page": "app/home/calculate/page.js"
+  "/home/users/page": "app/home/users/page.js"
 }

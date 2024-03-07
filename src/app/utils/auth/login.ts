@@ -1,4 +1,3 @@
-"use server";
 import { cookies } from "next/headers";
 export async function guardarToken(token: string) {
   const cookiesP = cookies();
